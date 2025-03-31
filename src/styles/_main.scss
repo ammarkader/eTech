@@ -1,0 +1,83 @@
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: $default-font;
+  color: $color-white;
+  background-color: $color-black;
+  font-kerning: none;
+  -webkit-text-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
+  font-optical-sizing: auto;
+  // -webkit-transform: translateZ(0);
+  // transform: translateZ(0);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// html.lenis,
+// html.lenis body {
+//   height: auto;
+// }
+
+// .lenis.lenis-smooth {
+//   scroll-behavior: auto !important;
+// }
+
+// .lenis.lenis-smooth [data-lenis-prevent] {
+//   overscroll-behavior: contain;
+// }
+
+// .lenis.lenis-stopped {
+//   overflow: hidden;
+// }
+
+// .lenis.lenis-scrolling iframe {
+//   pointer-events: none;
+// }
+
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+*::--webkit-media-controls-play-button {
+  display: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}

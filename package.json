@@ -1,0 +1,40 @@
+{
+  "name": "thechefsbox",
+  "version": "1.0.0",
+  "description": "This is a basic template for HTML projects that uses gulp, SCSS, and JavaScript.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "",
+    "start": "gulp dev",
+    "deploy": "gulp build && gulp deploy"
+  },
+  "author": "Meeran",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "^3.0.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglifycss": "^1.1.0",
+    "require-dir": "*",
+    "fs-extra": "^11.1.1",
+    "sass": "^1.63.6",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^4.46.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+
+  }
+}

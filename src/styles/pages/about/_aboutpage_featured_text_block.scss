@@ -1,0 +1,55 @@
+.featured-text__wrapper {
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+  background-color: $color-gray-700;
+
+  @include respond-below(sm) {
+    padding: 110px 0;
+  }
+
+  @include respond-below(xs) {
+    padding: 90px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1160px;
+    height: 1px;
+    background-color: $color-gray-500;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+  }
+
+  .featured-text__container {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+
+    .text {
+      @extend .font-text__style1;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 500;
+
+      @include respond-below(md) {
+        font-size: 28px;
+      }
+
+      @include respond-below(xs) {
+        font-size: 24px;
+      }
+    }
+  }
+}

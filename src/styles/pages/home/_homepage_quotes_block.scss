@@ -1,0 +1,55 @@
+.homepage-quote__wrapper {
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+
+  @include respond-below(sm) {
+    padding: 110px 0;
+  }
+
+  @include respond-below(xs) {
+    padding: 90px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 920px;
+    height: 1px;
+    background-color: $color-gray-500;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+  }
+
+  .homepage-quote__container {
+    width: 90%;
+    max-width: 920px;
+    margin: 0 auto;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+
+    .quote {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .text,
+      .author {
+        @extend .font-text__style1;
+      }
+
+      .author {
+        font-weight: 700;
+      }
+    }
+  }
+}

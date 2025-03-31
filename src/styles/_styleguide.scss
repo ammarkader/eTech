@@ -1,0 +1,225 @@
+//title styles
+.font-heading__style1 {
+  font-family: $font-oswald;
+  font-size: 80px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  color: $color-white;
+  letter-spacing: 0.25px;
+  padding: 0;
+  margin: 0;
+
+  @include respond-below(lg) {
+    font-size: 64px;
+  }
+
+  @include respond-below(md) {
+    font-size: 56px;
+  }
+
+  @include respond-below(sm) {
+    font-size: 48px;
+  }
+
+  @include respond-below(xs) {
+    font-size: 40px;
+  }
+}
+
+.font-heading__style2 {
+  font-family: $font-oswald;
+  font-size: 56px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+  color: $color-white;
+  letter-spacing: 0.25px;
+  padding: 0;
+  margin: 0;
+
+  @include respond-below(lg) {
+    font-size: 48px;
+  }
+
+  @include respond-below(md) {
+    font-size: 40px;
+  }
+
+  @include respond-below(xs) {
+    font-size: 32px;
+  }
+}
+
+.font-heading__style3 {
+  font-family: $font-oswald;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.35;
+  color: $color-white;
+  letter-spacing: 0.25px;
+  padding: 0;
+  margin: 0;
+
+  @include respond-below(md) {
+    font-size: 28px;
+  }
+
+  @include respond-below(xs) {
+    font-size: 24px;
+  }
+}
+
+.font-heading__style4 {
+  font-family: $font-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: $color-white;
+  letter-spacing: 0.25px;
+  padding: 0;
+  margin: 0;
+
+  @include respond-below(xs) {
+    font-size: 22px;
+  }
+}
+
+// text styles
+.font-text__style1 {
+  font-family: $font-nunito;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  color: $color-white;
+  padding: 0;
+  margin: 0;
+
+  @include respond-below(xs) {
+    font-size: 22px;
+  }
+}
+
+.font-text__style2 {
+  font-family: $font-nunito;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  color: $color-white;
+  padding: 0;
+  margin: 0;
+}
+
+.font-text__style3 {
+  font-family: $font-nunito;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  color: $color-white;
+  padding: 0;
+  margin: 0;
+
+  @include respond-below(md) {
+    font-size: 15px;
+  }
+
+  @include respond-below(xs) {
+    font-size: 14px;
+  }
+}
+
+//link styles
+// .font-link__style1 {
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   position: relative;
+//   padding: 0 26px;
+
+//   span {
+//     position: relative;
+//     display: inline-block;
+//     font-family: $font-custom2;
+//     font-size: 14px;
+//     font-weight: 500;
+//     line-height: 1;
+//     vertical-align: middle;
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     color: $color-black;
+//     padding: 0;
+//     margin: 0;
+//     z-index: 10;
+//   }
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     transform: translateY(-1px);
+//     width: 100%;
+//     height: 100%;
+//     background-color: $color-custom1;
+//   }
+// }
+
+// btn styles
+.btn__style1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: fit-content;
+  height: 58px;
+  font-family: $font-nunito;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: $color-black;
+  background-color: $color-white;
+  overflow: hidden;
+
+  .fade-out-text,
+  .fade-in-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .fade-out-text {
+    transform: translateY(0%);
+  }
+
+  .fade-in-text {
+    transform: translateY(-101%);
+  }
+
+  &:hover {
+    .fade-out-text {
+      transform: translateY(101%);
+    }
+
+    .fade-in-text {
+      transform: translateY(0%);
+    }
+  }
+}

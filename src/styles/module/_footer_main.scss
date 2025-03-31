@@ -1,0 +1,161 @@
+.footer-main__wrapper {
+  position: relative;
+  width: 100%;
+
+  .footer-main__container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 100px 0 90px;
+    border-top: 1px solid $color-gray-500;
+    border-bottom: 1px solid $color-gray-500;
+
+    @include respond-below(sm) {
+      flex-direction: column;
+      gap: 70px;
+    }
+
+    @include respond-below(xs) {
+      width: 84%;
+      padding: 90px 0;
+    }
+
+    .section-left__container {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 36px;
+
+      @include respond-below(sm) {
+        width: 100%;
+      }
+
+      .logo {
+        width: 160px;
+
+        a {
+          width: 100%;
+          display: inline-block;
+          text-decoration: none;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .description {
+        width: 100%;
+        max-width: 560px;
+
+        @include respond-below(sm) {
+          max-width: none;
+        }
+
+        p {
+          @extend .font-text__style2;
+        }
+      }
+    }
+
+    .section-right__container {
+      width: 45%;
+      display: flex;
+      gap: 40px;
+
+      @include respond-below(sm) {
+        width: 100%;
+      }
+
+      .contact {
+        width: 65%;
+
+        @include respond-below(sm) {
+          width: 50%;
+        }
+      }
+
+      .links {
+        width: 35%;
+
+        @include respond-below(sm) {
+          width: 50%;
+        }
+      }
+
+      .contact,
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+
+        .title {
+          width: 100%;
+
+          h3 {
+            @extend .font-text__style3;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .contact {
+        .content {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+
+          .address,
+          .email,
+          .phone {
+            width: 100%;
+            max-width: 280px;
+            line-height: 1;
+            padding: 0;
+            margin: 0;
+
+            a {
+              display: inline-block;
+              @extend .font-text__style3;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .links {
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            width: 100%;
+            line-height: 1;
+            padding: 0;
+            margin: 0;
+
+            a {
+              display: inline-block;
+              @extend .font-text__style3;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

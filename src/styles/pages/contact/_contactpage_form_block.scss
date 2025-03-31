@@ -1,0 +1,228 @@
+.contactpage-form__wrapper {
+  position: relative;
+  width: 100%;
+  padding: 160px 0;
+  background-color: $color-gray-700;
+
+  .contactpage-form__container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    @include respond-below(sm) {
+      flex-direction: column;
+      gap: 100px;
+    }
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+
+    .section-details__container {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 72px;
+
+      @include respond-below(sm) {
+        max-width: none;
+      }
+
+      .heading {
+        width: 100%;
+
+        h2 {
+          @extend .font-heading__style2;
+          margin-bottom: 32px;
+        }
+
+        p {
+          width: 100%;
+          max-width: 520px;
+          @extend .font-text__style1;
+
+          @include respond-below(sm) {
+            max-width: none;
+          }
+        }
+      }
+
+      .details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+
+        @include respond-below(sm) {
+          display: grid;
+          grid-template-columns: auto 1fr 1fr;
+          gap: 30px;
+        }
+
+        @include respond-below(xs) {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .detail {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+
+          h3 {
+            @extend .font-text__style2;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+          }
+
+          p {
+            line-height: 1;
+            padding: 0;
+            margin: 0;
+
+            a {
+              display: inline-block;
+              @extend .font-text__style2;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .section-form__container {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 64px;
+
+      @include respond-below(sm) {
+        max-width: none;
+      }
+
+      .section-description {
+        width: 100%;
+
+        p {
+          @extend .font-text__style2;
+        }
+      }
+
+      .section-form {
+        width: 100%;
+
+        .form {
+          display: block;
+          width: 100%;
+
+          .input-fields__container {
+            width: 100%;
+            margin-bottom: 40px;
+
+            .textfields {
+              display: flex;
+              width: 100%;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 40px;
+
+              li {
+                width: 100%;
+
+                label {
+                  display: block;
+                  @extend .font-text__style3;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  margin-bottom: 4px;
+                }
+
+                &.active {
+                  label {
+                    color: $color-black;
+                  }
+                }
+
+                input {
+                  display: block;
+                  width: 100%;
+                  padding: 10px 14px;
+                  @extend .font-text__style2;
+                  font-weight: 500;
+                  color: $color-black;
+                  border-radius: 6px;
+                  border: none;
+                  outline: none;
+
+                  &::placeholder {
+                    @extend .font-text__style2;
+                    color: $color-black;
+                  }
+                }
+              }
+            }
+          }
+
+          .text-area__container {
+            width: 100%;
+
+            label {
+              display: block;
+              @extend .font-text__style3;
+              font-weight: 700;
+              text-transform: uppercase;
+              margin-bottom: 4px;
+            }
+
+            &.active {
+              label {
+                color: $color-black;
+              }
+            }
+
+            textarea {
+              display: block;
+              width: 100%;
+              padding: 10px 14px;
+              @extend .font-text__style2;
+              font-weight: 500;
+              color: $color-black;
+              border-radius: 6px;
+              border: none;
+              outline: none;
+              height: 160px;
+              resize: none;
+
+              &::placeholder {
+                @extend .font-text__style2;
+                color: $color-black;
+              }
+            }
+          }
+
+          .submit-btn__container {
+            margin-top: 50px;
+
+            .submit-btn {
+              @extend .btn__style1;
+              cursor: pointer;
+              display: inline-block;
+              height: 53px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

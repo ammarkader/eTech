@@ -1,0 +1,40 @@
+.error__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .error__container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+
+    h1 {
+      @extend .font-heading__style1;
+    }
+
+    h2 {
+      @extend .font-text__style1;
+    }
+
+    p {
+      @extend .font-text__style2;
+    }
+
+    a {
+      @extend .btn__style1;
+      text-decoration: none;
+    }
+  }
+}

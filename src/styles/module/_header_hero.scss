@@ -1,0 +1,50 @@
+.header-hero__wrapper {
+  position: relative;
+  width: 100%;
+  padding: 260px 0 160px;
+
+  @include respond-below(lg) {
+    padding: 250px 0 150px;
+  }
+
+  @include respond-below(md) {
+    padding: 230px 0 130px;
+  }
+
+  @include respond-below(sm) {
+    padding: 210px 0 110px;
+  }
+
+  @include respond-below(xs) {
+    padding: 190px 0 90px;
+  }
+
+  .header-hero__container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+
+    .section-title {
+      width: 100%;
+      max-width: 1160px;
+      margin-bottom: 40px;
+
+      h1 {
+        @extend .font-heading__style1;
+      }
+    }
+
+    .section-description {
+      width: 100%;
+      max-width: 800px;
+
+      p {
+        @extend .font-text__style1;
+      }
+    }
+  }
+}

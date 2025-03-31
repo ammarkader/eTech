@@ -1,0 +1,97 @@
+.aboutpage-team__wrapper {
+  position: relative;
+  width: 100%;
+  padding: 160px 0;
+  background-color: $color-gray-700;
+
+  @include respond-below(lg) {
+    padding: 150px 0;
+  }
+
+  @include respond-below(md) {
+    padding: 130px 0;
+  }
+
+  @include respond-below(sm) {
+    padding: 110px 0;
+  }
+
+  @include respond-below(xs) {
+    padding: 90px 0;
+  }
+
+  .aboutpage-team__container {
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+
+    .section-heading__container {
+      width: 100%;
+      margin-bottom: 100px;
+
+      h2 {
+        @extend .font-heading__style2;
+        margin-bottom: 32px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 800px;
+        @extend .font-text__style1;
+      }
+    }
+
+    .team-members__container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px 30px;
+
+      @include respond-below(md) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include respond-below(sm) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      // @include respond-below(xs) {
+      //   grid-template-columns: 1fr;
+      // }
+
+      .team-member {
+        width: 100%;
+
+        .image {
+          width: 100%;
+          margin-bottom: 24px;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .content {
+          width: 100%;
+
+          h3 {
+            @extend .font-heading__style4;
+          }
+
+          h4 {
+            @extend .font-text__style3;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-Bold.eot");
+  src: url("VisbyCF-Bold.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-Bold.woff2") format("woff2"),
+    url("VisbyCF-Bold.woff") format("woff"),
+    url("VisbyCF-Bold.ttf") format("truetype"),
+    url("VisbyCF-Bold.svg#VisbyCF-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF Demi";
+  src: url("VisbyCF-DemiBold.eot");
+  src: url("VisbyCF-DemiBold.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-DemiBold.woff2") format("woff2"),
+    url("VisbyCF-DemiBold.woff") format("woff"),
+    url("VisbyCF-DemiBold.ttf") format("truetype"),
+    url("VisbyCF-DemiBold.svg#VisbyCF-DemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF Demi";
+  src: url("VisbyCF-DemiBoldOblique.eot");
+  src: url("VisbyCF-DemiBoldOblique.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-DemiBoldOblique.woff2") format("woff2"),
+    url("VisbyCF-DemiBoldOblique.woff") format("woff"),
+    url("VisbyCF-DemiBoldOblique.ttf") format("truetype"),
+    url("VisbyCF-DemiBoldOblique.svg#VisbyCF-DemiBoldOblique") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF Extra";
+  src: url("VisbyCF-ExtraBold.eot");
+  src: url("VisbyCF-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-ExtraBold.woff2") format("woff2"),
+    url("VisbyCF-ExtraBold.woff") format("woff"),
+    url("VisbyCF-ExtraBold.ttf") format("truetype"),
+    url("VisbyCF-ExtraBold.svg#VisbyCF-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-Light.eot");
+  src: url("VisbyCF-Light.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-Light.woff2") format("woff2"),
+    url("VisbyCF-Light.woff") format("woff"),
+    url("VisbyCF-Light.ttf") format("truetype"),
+    url("VisbyCF-Light.svg#VisbyCF-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-Heavy.eot");
+  src: url("VisbyCF-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-Heavy.woff2") format("woff2"),
+    url("VisbyCF-Heavy.woff") format("woff"),
+    url("VisbyCF-Heavy.ttf") format("truetype"),
+    url("VisbyCF-Heavy.svg#VisbyCF-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-MediumOblique.eot");
+  src: url("VisbyCF-MediumOblique.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-MediumOblique.woff2") format("woff2"),
+    url("VisbyCF-MediumOblique.woff") format("woff"),
+    url("VisbyCF-MediumOblique.ttf") format("truetype"),
+    url("VisbyCF-MediumOblique.svg#VisbyCF-MediumOblique") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-Medium.eot");
+  src: url("VisbyCF-Medium.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-Medium.woff2") format("woff2"),
+    url("VisbyCF-Medium.woff") format("woff"),
+    url("VisbyCF-Medium.ttf") format("truetype"),
+    url("VisbyCF-Medium.svg#VisbyCF-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-LightOblique.eot");
+  src: url("VisbyCF-LightOblique.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-LightOblique.woff2") format("woff2"),
+    url("VisbyCF-LightOblique.woff") format("woff"),
+    url("VisbyCF-LightOblique.ttf") format("truetype"),
+    url("VisbyCF-LightOblique.svg#VisbyCF-LightOblique") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-Regular.eot");
+  src: url("VisbyCF-Regular.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-Regular.woff2") format("woff2"),
+    url("VisbyCF-Regular.woff") format("woff"),
+    url("VisbyCF-Regular.ttf") format("truetype"),
+    url("VisbyCF-Regular.svg#VisbyCF-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Visby CF";
+  src: url("VisbyCF-Thin.eot");
+  src: url("VisbyCF-Thin.eot?#iefix") format("embedded-opentype"),
+    url("VisbyCF-Thin.woff2") format("woff2"),
+    url("VisbyCF-Thin.woff") format("woff"),
+    url("VisbyCF-Thin.ttf") format("truetype"),
+    url("VisbyCF-Thin.svg#VisbyCF-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}

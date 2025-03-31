@@ -1,0 +1,91 @@
+.homepage-why-choose-us__wrapper {
+  position: relative;
+  width: 100%;
+  background-color: $color-gray-700;
+
+  .homepage-why-choose-us__container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @include respond-below(xs) {
+      width: 84%;
+    }
+
+    .section-heading__container {
+      width: 100%;
+      margin-bottom: 100px;
+
+      h2 {
+        @extend .font-heading__style2;
+        margin-bottom: 32px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 800px;
+        @extend .font-text__style1;
+      }
+    }
+
+    .section-cards__container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px 40px;
+
+      @include respond-below(md) {
+        gap: 80px 60px;
+      }
+
+      @include respond-below(sm) {
+        grid-template-columns: 1fr;
+        gap: 70px;
+      }
+
+      .section-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+
+        .image {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 6px;
+          background-color: $color-white;
+
+          img {
+            width: 44px;
+            object-fit: cover;
+          }
+        }
+
+        .content {
+          width: 100%;
+          max-width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 24px;
+
+          @include respond-below(md) {
+            max-width: none;
+          }
+
+          h3 {
+            @extend .font-heading__style3;
+          }
+
+          p {
+            @extend .font-text__style2;
+          }
+        }
+      }
+    }
+  }
+}
