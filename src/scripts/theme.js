@@ -54,6 +54,12 @@ document.addEventListener("DOMContentLoaded", function () {
       closeBtn.addEventListener("click", function () {
         hide();
       });
+
+      window.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          hide();
+        }
+      });
     }
   }
   fullScreenMenu();

@@ -106,6 +106,8 @@
 
             img {
               width: 100%;
+              aspect-ratio: 1/1;
+              max-height: 300px;
               display: block;
               object-fit: cover;
               transition: transform 300ms ease-in-out;
@@ -139,6 +141,7 @@
 
             p {
               @extend .font-text__style2;
+              line-height: 1.55;
               margin-top: 16px;
             }
           }
