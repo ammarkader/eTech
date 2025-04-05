@@ -4,6 +4,22 @@
   padding: 160px 0;
   background-color: $color-gray-700;
 
+  @include respond-below(lg) {
+    padding: 150px 0;
+  }
+
+  @include respond-below(md) {
+    padding: 130px 0;
+  }
+
+  @include respond-below(sm) {
+    padding: 110px 0;
+  }
+
+  @include respond-below(xs) {
+    padding: 90px 0;
+  }
+
   .contactpage-form__container {
     width: 90%;
     max-width: 1400px;
