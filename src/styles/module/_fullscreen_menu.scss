@@ -36,6 +36,10 @@
       position: relative;
       will-change: transform;
 
+      @include breakpoint(499px) {
+        max-width: none;
+      }
+
       .section-top__container,
       .section-main__container,
       .section-bottom__container {
