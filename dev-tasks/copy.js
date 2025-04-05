@@ -1,37 +1,49 @@
-const gulp = require('gulp');
-// const flatten = require('gulp-flatten');
-const changed = require('gulp-changed');
+const gulp = require("gulp");
+const changed = require("gulp-changed");
 
-// gulp.task('copy:php', () => {
-//   return gulp
-//     .src('src/php/**/*')
-//     .pipe(flatten())
-//     .pipe(changed('dist/', { hasChanged: changed.compareContents }))
-//     .pipe(gulp.dest('dist/'));
-// });
-
-gulp.task('copy:js', () => {
+// Task to copy HTML files from the root to dist
+gulp.task("copy:html", () => {
   return gulp
-    .src('src/scripts/vendor/**/*.*')
-    // .pipe(flatten())
-    // .pipe(changed('dist/js/', { hasChanged: changed.compareContents }))
-    .pipe(changed('dist/js/vendor/', { hasChanged: changed.compareContents }))
-    .pipe(gulp.dest('dist/js/vendor/'));
+    .src("*.html")
+    .pipe(changed("dist/", { hasChanged: changed.compareContents }))
+    .pipe(gulp.dest("dist/"));
 });
 
-gulp.task('copy:images', () => {
+// Task to copy CSS files from the root to dist
+gulp.task("copy:css", () => {
   return gulp
-    .src('src/images/**/*')
-    // .pipe(flatten())
-    .pipe(changed('dist/images/', { hasChanged: changed.compareContents }))
-    .pipe(gulp.dest('dist/images/'));
+    .src("*.css")
+    .pipe(changed("dist/", { hasChanged: changed.compareContents }))
+    .pipe(gulp.dest("dist/"));
 });
 
-gulp.task( 'copy', gulp.series( 'copy:images', 'copy:js' ) );
+// Task to copy vendor JavaScript files
+gulp.task("copy:js", () => {
+  return gulp
+    .src("src/scripts/vendor/**/*.*")
+    .pipe(changed("dist/js/vendor/", { hasChanged: changed.compareContents }))
+    .pipe(gulp.dest("dist/js/vendor/"));
+});
 
-gulp.task('copy:watch', (done) => {
-  gulp.watch(['src/images/**/*'], gulp.series('copy:images'));
-  gulp.watch(['src/scripts/vendor/**/*'], gulp.series('copy:js'));
-  // gulp.watch([], gulp.series('copy'));
+// Task to copy image files
+gulp.task("copy:images", () => {
+  return gulp
+    .src("src/images/**/*")
+    .pipe(changed("dist/images/", { hasChanged: changed.compareContents }))
+    .pipe(gulp.dest("dist/images/"));
+});
+
+// Main 'copy' task to run all copy sub-tasks in parallel
+gulp.task(
+  "copy",
+  gulp.parallel("copy:images", "copy:js", "copy:html", "copy:css")
+);
+
+// 'copy:watch' task to watch for changes in all relevant files
+gulp.task("copy:watch", (done) => {
+  gulp.watch(["src/images/**/*"], gulp.series("copy:images"));
+  gulp.watch(["src/scripts/vendor/**/*"], gulp.series("copy:js"));
+  gulp.watch(["*.html"], gulp.series("copy:html"));
+  gulp.watch(["*.css"], gulp.series("copy:css"));
   done();
 });
