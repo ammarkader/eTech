@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   padding-bottom: 180px;
+  background-color: $color-black;
 
   @include respond-below(lg) {
     padding-bottom: 150px;
